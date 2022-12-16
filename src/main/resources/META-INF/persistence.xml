@@ -6,11 +6,9 @@
                    http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
              version="2.0">
 
-    <persistence-unit name="AccountUnit" transaction-type="RESOURCE_LOCAL">
-
+    <persistence-unit name="GlobalPersistUnit" transaction-type="RESOURCE_LOCAL">
+        <!--        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
-<!--        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
-        <class>model.Person</class>
 
         <properties>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost/gestion_notes" />
@@ -20,8 +18,8 @@
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 
-<!--            <property name="hibernate.hbm2ddl.auto" value="create" />-->
-              <property name="hibernate.connection.hbm2ddl.auto" value="update" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
+<!--              <property name="hibernate.connection.hbm2ddl.auto" value="update" />-->
 
             <property name="hibernate.connection.show_sql" value="true" />
         </properties>

@@ -1,4 +1,8 @@
+
+
+import model.Account;
 import model.Person;
+import model.Student;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -13,23 +17,37 @@ public class Main {
 
         try {
 
-            entityManagerFactory = Persistence.createEntityManagerFactory("AccountUnit");
+            entityManagerFactory = Persistence.createEntityManagerFactory("GlobalPersistUnit");
             //Creation de entity manager à partir de la factory
             entityManager = entityManagerFactory.createEntityManager();
+            EntityTransaction trans = entityManager.getTransaction();
 
             //-----------------------------------------------------------------------------
             System.out.println( "-------------- Insertion dans la BD -----------" );
             //-----------------------------------------------------------------------------
 
-            Person person= new Person();
-            person.setName("Aris");
-            person.setSurname("MONKOUN");
-            person.setPassword("YES");
-            person.setTypeAccount("Student");
+//            Person person= new Person();
+//
+//            person.setName("Aris");
+//            person.setSurname("MONKOUN");
+//            person.setPassword("YES");
+//            person.setTypeAccount("Student");
 
-            EntityTransaction trans = entityManager.getTransaction();
+            Account account=new Account();
+            account.setPassword("YES");
+
             trans.begin();
-            entityManager.persist(person);
+            entityManager.persist(account);
+            trans.commit();
+
+            Student student=new Student();
+            student.setName("Aris");
+            student.setSurname("MONKOUN");
+            student.setAccount(account);
+
+
+            trans.begin();
+            entityManager.persist(student);
             trans.commit();
 
         }
