@@ -1,8 +1,17 @@
 package model;
 
-import model.ITags.IProject;
 
-public class Evaluation_Project implements IProject {
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import javax.persistence.Entity;
+
+@Entity
+@Getter
+@Setter
+@NoArgsConstructor
+public class Evaluation_Project extends Evaluation {
     @Override
     public void evaluate() {
 

@@ -43,6 +43,7 @@ public class Main {
             Student student=new Student();
             student.setName("Aris");
             student.setSurname("MONKOUN");
+
             student.setAccount(account);
 
 
