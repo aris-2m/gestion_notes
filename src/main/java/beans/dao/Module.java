@@ -1,13 +1,9 @@
-package model;
+package beans.dao;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
 
-
-import javax.persistence.*;
 import java.util.List;
 
 @Getter
@@ -15,8 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 
 public class Module  {
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+
     private Long idModule;
 
     private boolean isRootModule;

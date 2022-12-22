@@ -1,9 +1,7 @@
-package model;
+package beans.dao;
 
 import lombok.Getter;
 import lombok.Setter;
-
-import javax.persistence.Entity;
 
 public enum Semester {
     S1,

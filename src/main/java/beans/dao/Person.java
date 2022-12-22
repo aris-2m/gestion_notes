@@ -1,4 +1,4 @@
-package model;
+package beans.dao;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
