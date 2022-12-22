@@ -26,13 +26,6 @@ public class Main {
             System.out.println( "-------------- Insertion dans la BD -----------" );
             //-----------------------------------------------------------------------------
 
-//            Person person= new Person();
-//
-//            person.setName("Aris");
-//            person.setSurname("MONKOUN");
-//            person.setPassword("YES");
-//            person.setTypeAccount("Student");
-
             Account account=new Account();
             account.setPassword("YES");
 
