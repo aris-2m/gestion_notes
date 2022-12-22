@@ -12,6 +12,6 @@ import java.io.Serializable;
 @Setter
 @NoArgsConstructor
 public class Student extends Person implements Serializable {
-
-
+	
+	private String fieldName; //Nom de la filière
 }

@@ -10,7 +10,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 
-public class Module  {
+public class Module {
 
     private Long idModule;
 
@@ -19,8 +19,6 @@ public class Module  {
     private String moduleName;
 
     private float weight;
-
-    private static float sumSubWeights;
 
     private int semester;
 
