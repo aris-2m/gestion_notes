@@ -12,7 +12,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class FieldOfStudy implements Serializable {
 
-    private Long idFieldOfStudy;
+    private int idFieldOfStudy;
 
     private String name;
 

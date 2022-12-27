@@ -15,7 +15,7 @@ import java.io.Serializable;
 
 public abstract class Person implements Serializable {
 
-    private Long idPerson;
+    private int idPerson;
 
     private String name;
 

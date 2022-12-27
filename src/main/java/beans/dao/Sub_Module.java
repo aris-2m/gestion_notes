@@ -8,10 +8,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Sub_Module {
+public class Sub_Module extends Module {
 
-	private Long FkidModule; // clé primaire de la classe Module
-	public Sub_Module() {
-		
-	}
+	private int idRootModule;
+
 }

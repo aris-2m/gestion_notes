@@ -10,7 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Account {
 
-    private Long idAccount;
+    private int idAccount;
 
     private String password;
 }

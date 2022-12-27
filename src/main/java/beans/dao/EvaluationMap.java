@@ -10,11 +10,13 @@ import lombok.Setter;
 @NoArgsConstructor
 public class EvaluationMap {
 
-    private Long idEvaluationMap;
+    private int idEvaluationMap;
 
-    private Evaluation evaluation;
+    private int fkEvaluation;
 
-    private Module fkModule;
+    private int fkStudent;
+
+    private int fkModule;
 
     private float evalWeight;
 }

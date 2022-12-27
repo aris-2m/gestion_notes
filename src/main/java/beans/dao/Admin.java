@@ -13,4 +13,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class Admin extends Person implements Serializable {
 
+    private int fkAccount;
+
 }

@@ -11,8 +11,10 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class Prof extends Person implements Serializable {
 
-    String code;
+    private int fkAccount;
 
-    String speciality;
+    private String code;
+
+    private String speciality;
 
 }

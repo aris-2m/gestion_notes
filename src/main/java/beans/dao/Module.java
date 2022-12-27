@@ -12,16 +12,20 @@ import java.util.List;
 
 public class Module {
 
-    private Long idModule;
+    private int idModule;
 
-    private boolean isRootModule;
+    private int fkFieldOfStudy;
+
+    private int fkProf;
 
     private String moduleName;
 
-    private float weight;
+    private float moduleWeight;
 
     private int semester;
 
-    private List<Module> subModuleList;
+    private static float sumSubWeights;
+
+
 
 }
